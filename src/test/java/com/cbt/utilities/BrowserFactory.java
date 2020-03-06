@@ -16,6 +16,7 @@ public class BrowserFactory {
                 WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
             }else if(browserName.equalsIgnoreCase("Edge")){
+                WebDriverManager.edgedriver();
                 return null;
             }
             return null;
