@@ -142,6 +142,7 @@ public void registrationFormFillUp(){
 
 
 }
+
 @AfterMethod
     public void tearDown(){
     driver.quit();
