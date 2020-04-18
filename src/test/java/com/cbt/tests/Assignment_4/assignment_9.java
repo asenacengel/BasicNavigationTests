@@ -33,8 +33,15 @@ public class assignment_9 {
             Thread.sleep(3000);
             driver.findElement(By.xpath("//*[@id=\"p_85/2470955011\"]/span/a/i")).click();
         Thread.sleep(3000);
-        driver.findElement(By.className("a-m-us a-aui_72554-c a-aui_dropdown_187959-c a-aui_pci_risk_banner_210084-c " +
-               "a-aui_perf_130093-c a-aui_preload_261698-c a-aui_tnr_v2_180836-c a-aui_ux_145937-c a-meter-animate")).click();
+        driver.findElement(By.id("deliveryRefinements")).click();
+        WebElement prices = driver.findElement(By.className("a-offscreen"));
+        if(prices.equals("25")){
+            System.out.println(false);
+        } else {
+            System.out.println(true);
+        }
+
+
 
 
 
